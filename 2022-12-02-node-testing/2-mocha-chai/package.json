@@ -1,0 +1,12 @@
+{
+  "name": "mocha-chai",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "mocha *.test.js"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.1.0"
+  }
+}

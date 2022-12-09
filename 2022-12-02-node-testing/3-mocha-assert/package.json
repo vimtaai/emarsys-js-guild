@@ -1,0 +1,11 @@
+{
+  "name": "mocha-assert",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "mocha *.test.js"
+  },
+  "dependencies": {
+    "mocha": "^10.1.0"
+  }
+}

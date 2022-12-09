@@ -1,0 +1,11 @@
+{
+  "name": "diy",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node diy.test.mjs"
+  },
+  "devDependencies": {
+    "tap-spec": "^5.0.0"
+  }
+}
