@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test": "node node-describe.test.js | tap-nyan"
-  },
-  "devDependencies": {
-    "tap-nyan": "^1.1.0"
+    "test": "node --test --test-reporter=spec"
   }
 }
