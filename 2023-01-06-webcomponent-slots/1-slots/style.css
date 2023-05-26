@@ -1,0 +1,19 @@
+my-component {
+  background: lightgray;
+  display: block;
+  padding: 10px 20px;
+}
+
+my-component::part(title) {
+  color: red;
+}
+
+my-component::part(button) {
+  display: flex;
+  justify-content: space-between;
+  background: green;
+}
+
+my-component button {
+  color: red;
+}
