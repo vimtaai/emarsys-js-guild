@@ -1,0 +1,14 @@
+{
+  "name": "typescript-fields",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "build:tsc": "tsc --watch",
+    "build:esbuild": "esbuild index.ts --outfile=dist/index.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.19",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
