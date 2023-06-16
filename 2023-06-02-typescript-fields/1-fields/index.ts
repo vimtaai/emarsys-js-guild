@@ -1,7 +1,14 @@
+const { compilerOptions } = require('../tsconfig.json');
+
 class Parent {
-  public foo: string = "fizz";
+  public foo: string = (() => {
+    console.log("parent.prop")
+    return "parent.prop";
+  })();
 
   constructor() {
+    console.log("parent.ctor")
+    this.foo = "parent.ctor";
     this.init();
   }
 
@@ -11,11 +18,18 @@ class Parent {
 class Child extends Parent {
   public foo: string;
 
+  constructor() {
+    super();
+    console.log("child.ctor", this.foo);
+  }
+
   init() {
-    console.log("init > this.foo\t", this.foo);
-    this.foo = "fizzbuzz";
+    console.log("child.init");
+    this.foo = "child.init";
   }
 }
 
+console.log(compilerOptions.target);
 const child = new Child();
-console.log("child.foo\t", child.foo);
+console.log("----------");
+console.log("child.foo:", child.foo);
